@@ -1,10 +1,15 @@
 <template>
   <header class="flex justify-between items-center p-4 bg-white shadow w-full z-10 mb-1">
     <div class="flex items-center space-x-4">
+      <!--
       <a class="flex items-center" target="_blank" href="https://github.com/vace/markdown-docx">
         <img src="/icon.svg" alt="MarkdownDocx Logo" class="h-8 w-8 mr-4" />
         <div class="text-xl font-bold text-indigo-600">MarkdownDocx</div>
       </a>
+    -->
+      <div class="copyright text-sm text-gray-500">
+        Copyright (c) 2025 Vace
+      </div>
       <div class="hidden sm:flex space-x-2">
         <button
           v-for="template in templates"
@@ -61,7 +66,7 @@
       >
         {{ locale === 'zh' ? '中' : 'EN' }}
       </button>
-
+<!--
       <label
         for="upload"
         class="px-3 py-1 rounded bg-gray-200 hover:bg-gray-100 cursor-pointer flex items-center"
@@ -80,7 +85,7 @@
         <span>{{ t('upload') }}</span>
         <input id="upload" type="file" accept=".md, .markdown, .txt" class="hidden" @change="handleFileUpload" />
       </label>
-
+    -->
       <button
         @click="$emit('download')"
         class="px-3 py-1 bg-indigo-600 text-white rounded hover:bg-indigo-700 flex items-center"
