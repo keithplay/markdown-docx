@@ -84,6 +84,10 @@ const translations = {
   theme_modern: {
     zh: '现代',
     en: 'Modern'
+  },
+  registerLogin: {
+    zh: '注册/登录',
+    en: 'Sign up/Sign in'
   }
 }
 

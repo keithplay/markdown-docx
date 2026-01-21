@@ -92,9 +92,10 @@
         </svg>
         <span>{{ t('download') }}</span>
       </button>
-      <div class="text-sm text-gray-500 font-medium">
-        Copyright (c) 2025 Vace
-      </div>
+      <!-- 新添加的下载插件按钮 -->
+      <button @click="downloadPlugin" style="background-color: transparent; color: inherit; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; margin-left: 10px; transition: background-color 0.3s;">{{ t('downloadPlugin') }}</button>
+      <!-- 注册/登录 按钮，不响应 -->
+      <button style="background-color: transparent; color: inherit; border: none; padding: 8px 16px; border-radius: 4px; cursor: default; font-size: 14px; margin-left: 10px;">{{ t('registerLogin') }}</button>
       <!--
       <a
         href="https://github.com/vace/markdown-docx"
@@ -128,6 +129,15 @@ const { setTheme, getAllThemes } = useTheme()
 
 const showThemeDropdown = ref(false)
 const themeDropdownRef = ref(null)
+
+const downloadPlugin = () => {
+  const link = document.createElement('a');
+  link.href = '/br-ex/ai2office_plugin.zip';
+  link.download = 'ai2office_plugin.zip';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
 const templates = [
   {
