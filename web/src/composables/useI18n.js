@@ -91,7 +91,7 @@ const translations = {
   },
   downloadPlugin: {
     zh: '下载网页插件',
-    en: 'Get extension for browser'
+    en: 'Get web-extension'
   }
 }
 
