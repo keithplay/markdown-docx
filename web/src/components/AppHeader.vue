@@ -93,9 +93,9 @@
         <span>{{ t('download') }}</span>
       </button>
       <!-- 新添加的下载插件按钮 -->
-      <button @click="downloadPlugin" style="background-color: transparent; color: inherit; border: none; padding: 8px 16px; border-radius: 4px; cursor: pointer; font-size: 14px; margin-left: 10px; transition: background-color 0.3s;">{{ t('downloadPlugin') }}</button>
+      <button @click="downloadPlugin" class="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-100 cursor-pointer" >{{ t('downloadPlugin') }}</button>
       <!-- 注册/登录 按钮，不响应 -->
-      <button style="background-color: transparent; color: inherit; border: none; padding: 8px 16px; border-radius: 4px; cursor: default; font-size: 14px; margin-left: 10px;">{{ t('registerLogin') }}</button>
+      <button class="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-100 cursor-pointer">{{ t('registerLogin') }}</button>
       <!--
       <a
         href="https://github.com/vace/markdown-docx"
