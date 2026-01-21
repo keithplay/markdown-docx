@@ -88,6 +88,10 @@ const translations = {
   registerLogin: {
     zh: '注册/登录',
     en: 'Sign up/Sign in'
+  },
+  downloadPlugin: {
+    zh: '下载网页插件',
+    en: 'Get extension for browser'
   }
 }
 

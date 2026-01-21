@@ -92,8 +92,11 @@
         </svg>
         <span>{{ t('download') }}</span>
       </button>
-      <!-- 新添加的下载插件按钮 -->
+      <!-- 新添加的下载插件按钮，暂禁用下载动作 -->
+      <button  class="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-100 cursor-pointer" >{{ t('downloadPlugin') }}</button>
+      <!--
       <button @click="downloadPlugin" class="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-100 cursor-pointer" >{{ t('downloadPlugin') }}</button>
+      -->
       <!-- 注册/登录 按钮，不响应 -->
       <button class="px-3 py-1 text-sm rounded bg-gray-200 hover:bg-gray-100 cursor-pointer">{{ t('registerLogin') }}</button>
       <!--
